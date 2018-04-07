@@ -1,6 +1,4 @@
 console.log("connected");
-var numOne = 999;
-var numTwo = 999;
 /*
 largest possible palindrome: 997799
 */
@@ -16,7 +14,7 @@ function test(){
   while(answered < 1){
     pal--;
     buildPalindrome();
-    for(i = 999; i > 99; i--){
+    for(numOne = 999; numOne > 99; numOne--){
 
     }
   }
