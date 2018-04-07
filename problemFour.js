@@ -6,7 +6,7 @@ var pal = 997;
 var palArray = [];
 var frontPal;
 var rearPal;
-var finalArray  ;
+var finalPal  ;
 var palindrome ;
 var answered = 0;
 
@@ -14,8 +14,14 @@ function test(){
   while(answered < 1){
     pal--;
     buildPalindrome();
+    //loop scans for first number
     for(numOne = 999; numOne > 99; numOne--){
-
+      if(finalPal % numOne === 0 && (finalPal/numOne)<=999){
+        console.log(finalPal);
+        console.log(numOne);
+        console.log(finalPal/numOne);
+        answered = 1;
+      }
     }
   }
 }
@@ -28,9 +34,9 @@ function buildPalindrome(){
   //inverts array and turns into a string
   rearPal = palArray.reverse().join("");
   //combines front and back of palindrome and converts to integer
-  finalArray = parseInt(frontPal+rearPal);
-  console.log(finalArray);
-  console.log(pal);
+  finalPal = parseInt(frontPal+rearPal);
+  // console.log(finalPal);
+  // console.log(pal);
 }
 
 
