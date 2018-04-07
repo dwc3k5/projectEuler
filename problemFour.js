@@ -15,7 +15,10 @@ var answered = 0;
 function test(){
   while(answered < 1){
     pal--;
-    // buildPalindrome();
+    buildPalindrome();
+    for(i = 999; i > 99; i--){
+
+    }
   }
 }
 
