@@ -10,12 +10,13 @@ var frontPal;
 var rearPal;
 var finalArray  ;
 var palindrome ;
+var answered = 0;
 
 function test(){
-buildPalindrome();
-
-
-
+  while(answered < 1){
+    pal--;
+    // buildPalindrome();
+  }
 }
 
 function buildPalindrome(){
