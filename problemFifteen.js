@@ -1,14 +1,16 @@
 console.log("connected");
 
 //for lattice size
-var cap = 4;
+var cap = 3;
 //tracking where program is in process
-var high = 0;
-var left = 0;
+var leftCount = 0;
+var num = [0];
+var choices = 2;
+
 
 function test(){
-  for(i = 1; i< cap; i++){
-
+  for(i = 0; i < cap; i++){
+    choices += num[i];
   }
 }
 test();
